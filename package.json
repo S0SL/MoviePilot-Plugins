@@ -750,6 +750,16 @@
         "level": 1,
         "v2": true
     },
+    "ServerChanMsg": {
+        "name": "ServerChan消息推送",
+        "description": "支持使用ServerChan发送消息通知。",
+        "labels": "消息通知",
+        "version": "1.0",
+        "icon": "Ntfy_A.png",
+        "author": "SOSL",
+        "level": 1,
+        "v2": true
+    },
     "TmdbWallpaper": {
         "name": "登录壁纸本地化",
         "description": "将MoviePilot的登录壁纸下载到本地。",
