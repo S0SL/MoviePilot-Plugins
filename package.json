@@ -3,7 +3,7 @@
         "name": "ServerChan消息推送",
         "description": "支持使用ServerChan发送消息通知。",
         "labels": "消息通知",
-        "version": "1.0",
+        "version": "1.3",
         "icon": "Ntfy_A.png",
         "author": "SOSL",
         "level": 1,
