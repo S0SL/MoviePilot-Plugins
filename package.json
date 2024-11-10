@@ -4,7 +4,7 @@
         "description": "支持使用ServerChan发送消息通知。",
         "labels": "消息通知",
         "version": "1.3",
-        "icon": "Ntfy_A.png",
+        "icon": "ServerChen.png",
         "author": "SOSL",
         "level": 1,
         "v2": true

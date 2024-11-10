@@ -12,7 +12,7 @@ class ServerChanMsg(_PluginBase):
     # 插件描述
     plugin_desc = "支持使用Server酱发送消息通知。"
     # 插件图标
-    plugin_icon = "ServerChan_A.png"
+    plugin_icon = "ServerChen.png"
     # 插件版本
     plugin_version = "1.3"
     # 插件作者
