@@ -3,7 +3,7 @@
         "name": "ServerChan消息推送",
         "description": "支持使用ServerChan发送消息通知。",
         "labels": "消息通知",
-        "version": "1.5",
+        "version": "1.56",
         "icon": "ServerChen.png",
         "author": "SOSL",
         "level": 1,
