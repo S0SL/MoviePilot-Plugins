@@ -170,8 +170,8 @@ class ServerChanMsg(_PluginBase):
             logger.info(f"消息类型 {msg_type.value} 未开启消息发送")
             return
 
-        try:
-            sc_url = "https://sctapi.ftqq.com/%s.send?%s" % (self._sckey, urlencode({"title": title, "desp": text}))
+        try:   
+            sc_url = "https://329.push.ft07.com/send/%s.send?tags=MoviePilot&%s" % (self._sckey, urlencode({"title": title, "desp": text}))
             res = RequestUtils().get_res(sc_url)
             if res and res.status_code == 200:
                 ret_json = res.json()
