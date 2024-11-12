@@ -160,7 +160,7 @@ class ServerChanMsg(_PluginBase):
         title = msg_body.get("title")
         # 文本
         text = msg_body.get("text")
-
+        tags = "MoviePilot"
         if not title and not text:
             logger.warn("标题和内容不能同时为空")
             return
@@ -170,7 +170,7 @@ class ServerChanMsg(_PluginBase):
             logger.info(f"消息类型 {msg_type.value} 未开启消息发送")
             return
 
-        try:   
+        try:
             sc_url = "https://329.push.ft07.com/send/%s.send?%s" % (self._sckey, urlencode({"title": title, "desp": text,"tags":tags}))
             res = RequestUtils().get_res(sc_url)
             if res and res.status_code == 200:
