@@ -14,7 +14,7 @@ class ServerChanMsg(_PluginBase):
     # 插件图标
     plugin_icon = "ServerChen.png"
     # 插件版本
-    plugin_version = "1.5"
+    plugin_version = "1.56"
     # 插件作者
     plugin_author = "SOSL"
     # 作者主页
