@@ -171,7 +171,7 @@ class ServerChanMsg(_PluginBase):
             return
 
         try:   
-            sc_url = "https://329.push.ft07.com/send/%s.send?tags=MoviePilot&%s" % (self._sckey, urlencode({"title": title, "desp": text}))
+            sc_url = "https://329.push.ft07.com/send/%s.send?%s" % (self._sckey, urlencode({"title": title, "desp": text,"tags":tags}))
             res = RequestUtils().get_res(sc_url)
             if res and res.status_code == 200:
                 ret_json = res.json()
