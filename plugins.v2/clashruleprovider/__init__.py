@@ -486,7 +486,8 @@ class ClashRuleProvider(_PluginBase):
             if not self._clash_rule_parser.has_rule(clash_rule):
                 self._clash_rule_parser.insert_rule_at_priority(clash_rule, 0)
 
-    def update_rule_by_priority(self, rule: Dict[str, Any]], rule_parser: ClashRuleParser) -> bool:
+    # 修复点：移除多余的方括号
+    def update_rule_by_priority(self, rule: Dict[str, Any], rule_parser: ClashRuleParser) -> bool:
         if not isinstance(rule.get("priority"), int):
             return False
         clash_rule = ClashRuleParser.parse_rule_dict(rule)
@@ -496,7 +497,8 @@ class ClashRuleProvider(_PluginBase):
         self.__save_data()
         return res
 
-    def add_rule_by_priority(self, rule: Dict[str, Any]], rule_parser: ClashRuleParser) -> bool:
+    # 修复点：移除多余的方括号
+    def add_rule_by_priority(self, rule: Dict[str, Any], rule_parser: ClashRuleParser) -> bool:
         if not isinstance(rule.get("priority"), int):
             return False
         try:
@@ -678,7 +680,7 @@ class ClashRuleProvider(_PluginBase):
         top_rules = []
         for rule in self._clash_rule_parser.rules:
             if (not isinstance(rule.action, Action) and
-                    not len([x for x in self.clash_outbound(clash_config) if rule.action == x.get("name", '')])):
+                    not len([x for x in self.clash_outbound(clash_config) if rule.action == x.get("name", '')]):
                 logger.warn(f"出站 {rule.action} 不存在, 绕过 {rule.raw_rule}")
                 continue
             top_rules.append(rule.raw_rule)
