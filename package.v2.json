@@ -442,9 +442,9 @@
   },
   "ClashRuleProvider": {
     "name": "Clash Rule Provider",
-    "description": "随时为Clash添加一些额外的规则。",
+    "description": "修复解析失败",
     "labels": "工具",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "icon": "Mihomo_Meta_A.png",
     "author": "wumode",
     "level": 1,
